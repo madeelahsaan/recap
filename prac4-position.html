@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 40vw;
+            height: 24vh;
+            box-sizing: border-box;
+            margin: 3px;
+            border: 2px solid black;
+        }
+
+        .box {
+            width: 30px;
+            height: 30px;
+            border: 1px solid red;
+            margin: 3px;
+        }
+
+        .child-1 {
+            position: relative;
+            top: 20px;
+            left: 90px;
+            background-color: aqua;
+        }
+
+        .box-2 {
+            position: relative;
+        }
+
+        .child-2 {
+            position: absolute;
+            background-color: aqua;
+            top: 3px;
+            right: 10px;
+        }
+
+        .box-3 {
+            position: relative;
+        }
+
+        .child-3 {
+            position: fixed;
+            bottom: 10px;
+            right: 50px;
+        }
+
+        .box-5 {
+            position: relative;
+        }
+
+        .child {
+            background: #797;
+            width: 200px;
+            position: sticky;
+            top: 3px;
+            right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container box-5">
+        <div class="box child "></div>
+        <div class="box"></div>
+        <div class="box "></div>
+    </div>
+    <div class="container box-1">
+        <div class="box "></div>
+        <div class="box child-1"></div>
+        <div class="box "></div>
+    </div>
+    <div class="container box-2">
+        <div class="box child-2"></div>
+        <div class="box "></div>
+        <div class="box "></div>
+    </div>
+    <div class="container box-3">
+        <div class="box child-3"></div>
+    </div>
+    <div class="container box-4">
+        <div class="box child-4"></div>
+    </div>
+</body>
+
+</html>
